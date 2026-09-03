@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Year 10 Chemistry</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="top-inner">
+      <a class="logo" href="index.html">GCSE Homework</a>
+      <nav class="nav">
+        <a class="bio" href="year-10-biology.html">Y10 Biology Homework</a><a class="bio" href="year-11-biology.html">Y11 Biology Homework</a><a class="bio" href="biology-revision.html">Biology Revision</a><a class="chem" href="year-10-chemistry.html">Y10 Chemistry Homework</a><a class="chem" href="year-11-chemistry.html">Y11 Chemistry Homework</a><a class="chem" href="chemistry-revision.html">Chemistry Revision</a><a class="phys" href="year-10-physics.html">Y10 Physics Homework</a><a class="phys" href="year-11-physics.html">Y11 Physics Homework</a><a class="phys" href="physics-revision.html">Physics Revision</a>
+      </nav>
+    </div>
+  </header>
+  
+  <main data-subject-page="year-10-chemistry" class="subject-chemistry">
+    <section class="page-head">
+      <h1 data-page-title>Year 10 Chemistry</h1>
+      <p data-page-subtitle class="muted"></p>
+    </section>
+    
+    <div class="term-tabs" data-term-tabs></div>
+    <div data-term-panels></div>
+    
+    <section id="homework" class="homework-grid" data-inline-homework hidden>
+      <div class="homework-main">
+        <section class="study-card">
+          <p class="muted" data-hw-eyebrow></p>
+          <h2 data-hw-title>Homework</h2>
+          <p class="muted">Click the image to enlarge it, then use the zoom controls to inspect the details.</p>
+          <div data-hw-image-wrap></div>
+        </section>
+        <section class="study-card">
+          <h2>Key Vocabulary</h2>
+          <p class="muted">Hover over a word, or tap into it, to reveal its definition.</p>
+          <div class="vocab-grid" data-hw-vocab></div>
+        </section>
+        <section class="quiz-shell">
+<div class="quiz-form">
+            <label>First name<input data-first autocomplete="given-name"></label>
+            <label>Last name<input data-last autocomplete="family-name"></label>
+            <label>Class<select data-class><option value="">Choose class</option><option>A</option><option>B</option><option>C</option><option>D</option></select></label>
+          </div>
+          <div class="resources">
+            <button class="btn chem" type="button" data-start>Start 10 Questions</button>
+            <button class="btn secondary" type="button" data-reset>Clear Answers</button>
+          </div>
+          <form data-question-form></form>
+          <div class="resources" data-submit-row hidden><button class="btn chem" type="button" data-submit>Submit Homework</button></div>
+          <div class="result" data-result hidden></div>
+        </section>
+      </div>
+      <aside class="homework-side">
+        <section class="study-card">
+          <h2>Key Facts</h2>
+          <ul class="fact-list" data-hw-facts></ul>
+        </section>
+        <section class="study-card">
+          <h2>Exam-Style Questions</h2>
+          <ol class="exam-list" data-hw-exam></ol>
+        </section>
+        <section class="study-card">
+          <h2>Useful Links</h2>
+          <div class="resources" data-hw-resources></div>
+        </section>
+      </aside>
+    </section>
+  </main>
+  <div class="modal" data-modal hidden><div class="modal-bar"><button class="btn secondary" data-zoom-out>Zoom out</button><button class="btn secondary" data-zoom-in>Zoom in</button><button class="btn danger" data-close>Close</button></div><div class="modal-img-wrap"><img alt="Expanded knowledge organiser"></div></div>
+  <script src="assets/data.js?v=20260901c"></script>
+  <script src="assets/google-sheets-config.js?v=20260901c"></script>
+  <script src="assets/site.js?v=20260901c"></script>
+</body>
+</html>
+
+

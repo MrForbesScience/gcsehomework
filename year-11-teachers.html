@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Year 11 Teachers</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="top-inner">
+      <a class="logo" href="index.html">GCSE Homework</a>
+      <nav class="nav">
+        <a class="bio" href="year-10-biology.html">Y10 Biology Homework</a><a class="bio" href="year-11-biology.html">Y11 Biology Homework</a><a class="bio" href="biology-revision.html">Biology Revision</a><a class="chem" href="year-10-chemistry.html">Y10 Chemistry Homework</a><a class="chem" href="year-11-chemistry.html">Y11 Chemistry Homework</a><a class="chem" href="chemistry-revision.html">Chemistry Revision</a><a class="phys" href="year-10-physics.html">Y10 Physics Homework</a><a class="phys" href="year-11-physics.html">Y11 Physics Homework</a><a class="phys" href="physics-revision.html">Physics Revision</a>
+      </nav>
+    </div>
+  </header>
+  
+  <main data-teacher-page="year-11" class="subject-teacher">
+    <section class="page-head">
+      <h1>Year 11 Teachers</h1>
+      <p class="muted">Login with the staff password to filter Google Sheet results by year, class and subject.</p>
+    </section>
+    <section class="teacher-box" data-login-box>
+      <label>Password<input type="password" data-password placeholder="Teacher password"></label>
+      <p><button class="btn teacher" type="button" data-login>Login</button></p>
+      <p class="muted" data-login-message></p>
+    </section>
+    <section class="teacher-results teacher-box" data-teacher-results hidden>
+      <div class="tracker-filters">
+        <label>Age group<select data-filter data-filter-year><option>Year 10</option><option>Year 11</option></select></label>
+        <label>Class<select data-filter data-filter-class><option value="">All classes</option><option>A</option><option>B</option><option>C</option><option>D</option></select></label>
+        <label>Subject<select data-filter data-filter-subject><option value="">All subjects</option><option value="physics">Physics</option><option value="chemistry">Chemistry</option><option value="biology">Biology</option></select></label>
+      </div>
+      <div class="rag-key"><span class="rag red">0-4</span><span class="rag amber">5-7</span><span class="rag green">8-10</span></div>
+      <div class="teacher-actions">
+        <button class="btn secondary" type="button" data-refresh-results>Refresh results</button>
+        <button class="btn danger" type="button" data-delete-selected>Remove selected students</button>
+        <button class="btn danger" type="button" data-reset-leaderboard>Reset weekly leaderboard</button>
+        <span class="muted" data-selection-message></span>
+      </div>
+      <div data-table></div>
+      <section class="weekly-summary">
+        <p class="summary-label">Weekly Summary</p>
+        <h2>Red, Amber and Green Percentages</h2>
+        <div class="summary-grid" data-weekly-summary></div>
+      </section>
+    </section>
+  </main>
+  
+  <script src="assets/data.js?v=20260901c"></script>
+  <script src="assets/google-sheets-config.js?v=20260901c"></script>
+  <script src="assets/site.js?v=20260901c"></script>
+</body>
+</html>
+
+
+
