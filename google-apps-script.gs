@@ -1,4 +1,4 @@
-﻿const SPREADSHEET_ID = "1Yq3bcdnPVQTw5hT_rid0zD0iA5PO2pTMRAQCs2puIkI";
+﻿const SPREADSHEET_ID = "AKfycbwijB2Db8plKHfth2e2i3UB7SM6yQ_9jCEYMvM4ILZolVlpcDHq-SkZ-oh6ehairGCk";
 const SHEET_NAME = "Results";
 const HEADERS = ["year", "subject", "week", "class", "name", "weeklyScore", "total"];
 const TEACHER_PASSWORD = "Ed3xcel!";
